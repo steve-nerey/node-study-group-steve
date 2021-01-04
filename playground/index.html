@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Practice code</h1>
+    <img id="dogPic" src="">
+    <script>
+
+        const getdogs = fetch('https://random.dog/woof.json')
+            .then((response => response.json()))
+            .then(data => document.getElementById('dogPic').src = data.url)
+             
+            fetch('/api', options)
+
+            app.post('/api', ( ) => {
+        
+            })
+
+            app.post('/api', (req, res) => {
+            const data = req.body;
+            database.insert(data);
+            console.log(data);
+            res.send('your rating of ' + data.rating + ' has been recorded');
+            })
+
+
+        // callback example w/ settimeout
+
+        // using a named function as callback
+        // const message = function() {
+        //     console.log('this message will print out after 1 sec.')
+        // }
+        // setTimeout(message, 1000);
+
+
+        // // using an anonymous function as callback
+        // setTimeout(function() {
+        //     console.log('this one will print after 2 seconds');
+        // },2000);
+
+        // setTimeout(() => console.log('this one will print after 3 seconds'), 3000 );
+
+        // function homework(subject, callback){
+        //     console.log("I'm doing my "+ subject + "homework");
+        //     callback();
+        // }
+
+        // function finishedHomework() {
+        //     console.log('I finished my homework')
+        // }
+
+
+
+    </script>
+    
+</body>
+</html>
